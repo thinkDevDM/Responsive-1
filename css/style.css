@@ -1,0 +1,301 @@
+body {
+	background: #ececec;
+	font-size: 90%;
+	font-family: Arial, sans-serif;
+	color: #191919;
+	line-height: 1.7em;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: #191919;
+}
+
+a:hover {
+	color: #666666;
+}
+
+h2 {
+	color: #191919;
+}
+
+.clear {
+	clear: both;
+	z-index: 1;
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+	clear: both;
+}
+
+.main-header #logo {
+	width: 25%;
+	margin: 10px 0;
+	display: block;
+	transition: width 2s;
+}
+
+.main-header .main-nav {
+	background: #0066ff;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #005CE6;
+}
+
+.main-header .main-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-header .main-nav li {
+	color: #ffffff;
+	font-weight: bold;
+	display: inline;
+	float: left;
+	margin-right: 3px;
+}
+
+.main-header .main-nav li a {
+	color: #ffffff;
+	display: inline-block;
+	padding: 10px 20px;
+	height: 20px;
+}
+
+.main-header .main-nav li a:hover, .main-header .main-nav li a.active {
+	background: #efeadd;
+	color: #666666;
+	border-radius: 5px;
+}
+
+#content {
+	width: 70%;
+	float: left;
+	overflow: auto;
+	transition: width 1s;
+}
+
+#content article {
+	border-radius: 5px;
+	background: #ffffff;
+	overflow: auto;
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+
+#content article span {
+	font-style: italic;
+	color: #000000;
+	font-size: 85%;
+}
+
+#content a.readmore {
+	font-weight: bold;
+	display: block;
+	float: right;
+	color: #ffffff;
+	padding: 5px 9px;
+	background: #0066ff;
+	border-radius: 5px;
+}
+
+#content a.readmore:hover {
+	background: #005CE6;
+}
+
+#sidebar {
+	width: 30%;
+	float: left;
+}
+
+#sidebar .block {
+	border: 1px solid #005CE6;
+	border-radius: 5px;
+	background: #ffffff;
+	overflow: auto;
+	padding: 10px 15px;
+	margin: 10px 0 0 10px;
+}
+
+footer {
+	background: #0066ff;
+	height: auto;
+	border: 1px solid #005CE6;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+footer p {
+	color: #ffffff;
+	margin: 0;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+/* Tablet/iPads (Portrait and Landscape) */
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	#container {
+		width: 95%;
+	}
+
+	.main-header img#logo {
+		margin: auto;
+		display: block;
+		width: 40%;
+		padding-bottom: 10px;
+		transition: width 2s;
+	}
+
+	.main-header .main-nav {
+		display: block;
+		transition: height 1s;
+	}
+
+	#content {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block {
+		margin-left: 0;
+	}
+}
+
+/* Smaller Tablets (Portrait and Landscape) */
+@media screen and (min-width: 569px) and (max-width: 767px) {
+	#container {
+		width: 95%;
+	}
+
+	.main-header img#logo {
+		margin: auto;
+		display: block;
+		width: 60%;
+		padding-bottom: 10px;
+	}
+
+	.main-header .main-nav {
+		height: auto;
+		display: block;
+		overflow: hidden;
+		width: 99%;
+		transition: width 1s;
+	}
+
+	.main-header .main-nav ul {
+		padding: 2% 1%;
+		text-align: center;
+		width: 98%;
+	}
+
+	.main-header .main-nav li {
+		float: none;
+		display: block;
+		margin-right: 0;
+		width: 100%;
+		border-bottom: 1px solid #005CE6;
+	}
+
+	.main-header .main-nav li a {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#content {
+		width: 100%;
+		float: none;
+	}
+
+	#content a.readmore {
+		display: block;
+		width: 75%;
+		margin: auto;
+		text-align: center;
+		float: none;
+	}
+
+	#sidebar {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block {
+		margin-left: 0;
+	}
+
+}
+
+/* Smartphones (Portrait and Landscape) */
+@media screen and (min-width: 240px) and (max-width: 568px) {
+	#container {
+		width: 95%;
+	}
+
+	.main-header img#logo {
+		margin: auto;
+		display: block;
+		width: 95%;
+		padding-bottom: 10px;
+	}
+
+	.main-header .main-nav {
+		height: auto;
+		display: block;
+		overflow: hidden;
+		width: 99%;
+	}
+
+	.main-header .main-nav ul {
+		padding: 2% 1%;
+		text-align: center;
+		width; 98%
+	}
+
+	.main-header .main-nav li {
+		float: none;
+		display: block;
+		margin-right: 0;
+		width: 100%;
+		border-bottom: 1px solid #005CE6;
+	}
+
+	.main-header .main-nav li a {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#content {
+		width: 100%;
+		float: none;
+	}
+
+	#content a.readmore {
+		display: block;
+		width: 90%;
+		margin: auto;
+		text-align: center;
+		float: none;
+	}
+
+	#sidebar {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block {
+		margin-left: 0;
+	}
+}
